@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export default function Header() {
     return (
-        <Container>
+        <ContainerHeader>
             <Icon />
             <Name>
                 Ben Burns
@@ -13,11 +13,11 @@ export default function Header() {
                 <IconArrow src='./static/img/arrow.svg' />
                 <Text dangerouslySetInnerHTML={{ __html: 'Payment' }} />
             </DivNavigation>
-        </Container>
+        </ContainerHeader>
     )
 }
 
-const Container = styled.div`
+const ContainerHeader = styled.div`
     background: #101011;
     padding: 50px 0 24px;
     width: 100%;

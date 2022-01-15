@@ -3,17 +3,18 @@ import styled from 'styled-components'
 
 export default function Footer() {
     return (
-        <Container>
+        <ContainerFooter>
             <Button>
                 Pay $75
             </Button>
-        </Container>
+        </ContainerFooter>
     )
 }
 
-const Container = styled.div`
+const ContainerFooter = styled.div`
     background: #101011;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #393B3F;
     padding: 25px 0;
     width: 100%;
     box-sizing: border-box;

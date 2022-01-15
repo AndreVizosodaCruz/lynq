@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
+import '../styles/fonts.css';
 
 export default function App({ Component, pageProps }) {
   return (
