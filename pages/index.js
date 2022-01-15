@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Footer, Form, Header } from '../components'
+import { Footer, Form, Header } from '../customComponents'
 
 
 export default function Home() {
