@@ -1,6 +1,6 @@
-import Header from './header';
-import Footer from './footer';
-import Form from './form';
+import Header from './header/index';
+import Footer from './footer/index';
+import Form from './form/index';
 
 export {
     Header,
