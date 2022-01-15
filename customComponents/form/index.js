@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 
+const CustomInput = (props) => {
+
+    return (
+        <Margin margin={props.margin}>
+            <Text size="14px" height="17px" color="#BEC2C9" dangerouslySetInnerHTML={{ __html: props.label }} />
+            <Margin margin={0.5} />
+            <StyledInput type={props.type} placeholder={props.placeholder} value={props.value} onChange={props.onChange} />
+        </Margin>
+    )
+
+}
+
 export default function Form() {
     const [values, setValues] = useState({ firstName: '', lastName: '', email: '' })
-
-    const CustomInput = (props) => {
-
-        return (
-            <Margin margin={props.margin}>
-                <Text size="14px" height="17px" color="#BEC2C9" dangerouslySetInnerHTML={{ __html: props.label }} />
-                <Margin margin={0.5} />
-                <StyledInput type={props.type} placeholder={props.placeholder} value={props.value} onChange={props.onChange} />
-            </Margin>
-        )
-
-    }
 
     return (
         <Container>
